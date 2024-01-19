@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{ 
+    background-color: hsl(0, 0%, 86%);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    display: grid;
+    background-color: white;
+    padding: 25px 150px 20px 45px;
+    border-radius: 20px 20px 150px 20px;
+}
+h6{
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+input{
+    margin-right: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    padding: 5px 0px 5px 20px;
+    font-size: 32px;
+    width: 130px;
+}
+
+#midSection{
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#borda{
+    width: 100%;
+    margin: 0px;
+    border: 0.5px solid hsl(0, 0%, 86%);
+}
+h1{ 
+    font-size: 70px;
+    font-weight: 800 ;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+#idade p{
+    color: hsl(259, 100%, 65%);
+    font-size: 70px;
+    font-weight: 700;
+    font-style: italic;
+    margin-left: 10px;
+}
+#dataNascimento{
+    display: flex;
+}
+
+main{
+    display: flex;
+}
+.idade{
+    display: flex;
+    align-items: center;
+    
+}
+
+aside{
+    border-radius: 0;
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+/* JS */
+#purple{
+    cursor: pointer;
+}
+
+.ErroBorderRed{
+    border: 1px solid red;
+}
+.ErroFontRed{
+    color: red;
+}
+.EmptyInputsRed{
+    font-size: 10px;
+    color: red;
+    text-align: center;
+}

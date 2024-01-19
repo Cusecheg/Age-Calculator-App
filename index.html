@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AgeCalculator</title>
+</head>
+<body>
+    <main>
+        <article>
+            <form>
+                <div id="dataNascimento">
+                    
+                    <div>
+                        <h6 class="ErroFontBlack">d a y</h6> 
+                        <input class="ErroBorderBlack" id="day" placeholder="DD" type="number" required>
+                        <p class="EmptyInputs"></p>
+                    </div> 
+                    <div>
+                        <h6 class="ErroFontBlack">m o n t h</h6>
+                        <input class="ErroBorderBlack" id="month" placeholder="MM" type="number" required>
+                        <p class="EmptyInputs"></p>
+                    </div>
+                    <div>
+                        <h6 class="ErroFontBlack">y e a r</h6>
+                        <input class="ErroBorderBlack" id="year" placeholder="YYYY" type="number" required>
+                        <p class="EmptyInputs"></p>
+                    </div>
+                </div>
+                <div id="midSection">
+                    <div id="borda"></div>
+                    <div id="botaoImage">
+                        <img type="submit" onclick="validarIdade()" id="purple" src="Images/purple.svg" alt="erro">
+                    </div>
+                </div>
+                <div id="idade">
+                    <div class="idade">
+                        <p id="years">--</p>
+                        <h1>years</h1>
+                    </div>
+                    <div class="idade">
+                        <p id="months">--</p>
+                        <h1>months</h1>
+                    </div>
+                    <div class="idade">
+                        <p id="days">--</p>
+                        <h1>days</h1>
+                    </div>
+                </div>
+            </form>
+        </article>
+    <main>
+</body>
+<script src="script.js"></script>
+</html>
