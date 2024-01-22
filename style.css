@@ -1,31 +1,55 @@
+:root {
+    /* primary */
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+  
+    /* neutral */
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+  }
+
 *{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
     
 }
 body{ 
-    background-color: hsl(0, 0%, 86%);
+    background-color: var(--Light-grey);
     display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
-
-article{
+#botaoImage{
+    align-items: center;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+#botaoImage:hover{
+    background-color: var(--off-black);
+}
+main{
     display: grid;
-    background-color: white;
+    background-color: var(--White);
     padding: 25px 150px 20px 45px;
     border-radius: 20px 20px 150px 20px;
 }
 h6{
-    color: hsl(0, 1%, 44%);
+    color: var(--Smokey-grey);
     text-transform: uppercase;
     font-size: 12px;
 }
 
 input{
     margin-right: 8px;
-    border: 1px solid hsl(0, 0%, 86%);
+    border: 1px solid var(--Light-grey);
     border-radius: 5px;
     padding: 5px 0px 5px 20px;
     font-size: 32px;
@@ -42,7 +66,7 @@ input{
 #borda{
     width: 100%;
     margin: 0px;
-    border: 0.5px solid hsl(0, 0%, 86%);
+    border: 0.5px solid var(--Light-grey);
 }
 h1{ 
     font-size: 70px;
@@ -52,7 +76,7 @@ h1{
 }
 
 #idade p{
-    color: hsl(259, 100%, 65%);
+    color: var(--Purple);
     font-size: 70px;
     font-weight: 700;
     font-style: italic;
@@ -61,30 +85,14 @@ h1{
 #dataNascimento{
     display: flex;
 }
-
-main{
-    display: flex;
-}
 .idade{
     display: flex;
     align-items: center;
     
 }
 
-aside{
-    border-radius: 0;
-    display: flex;
-    background-color: white;
-    align-items: center;
-}
-/* JS */
-#purple{
-    cursor: pointer;
-}
-
-.ErroBorderRed{
-    border: 1px solid red;
-}
-.ErroFontRed{
-    color: red;
-}
+.error-texts {
+    color: var(--Light-red);
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
